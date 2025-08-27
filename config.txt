@@ -1,0 +1,13 @@
+-- Configuração do GIT
+git config --global user.name LauraChiarello
+git config --global user.email laura_chiarello@live.com
+
+
+-Criar o gitignore
+dotnet new gitignore
+
+
+--Criar projeto MVC
+dotnet new mvc -o Pokedex
+
+cd Pokedex
