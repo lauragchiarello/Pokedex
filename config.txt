@@ -11,3 +11,9 @@ dotnet new gitignore
 dotnet new mvc -o Pokedex
 
 cd Pokedex
+
+pacote necessário para manipular o banco de dados:
+dotnet add package Microsoft.EntityFrameworkCore --version 9.0.8
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 9.0.0
+
+o que é a camada de contexto? criar herança. é a classe que vai representar o banco (fazer comunicação)

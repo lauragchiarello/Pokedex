@@ -15,5 +15,7 @@ public class Tipo
 
     [StringLength(25)]
     public string Cor { get; set; } = "#000";
+
+    public ICollection<PokemonTipo> Pokemons { get; set; }
 }
 
