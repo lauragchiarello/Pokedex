@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Pokedex.Models;
 
+[Table("Pokemon")]
 public class Pokemon
 {
     [Key]

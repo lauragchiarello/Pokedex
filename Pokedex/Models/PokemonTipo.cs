@@ -1,7 +1,5 @@
-
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Reflection;
 
 namespace Pokedex.Models;
 
@@ -16,6 +14,6 @@ public class PokemonTipo
 
     [Key, Column(Order = 2)]
     public uint TipoId { get; set; }
-     [ForeignKey("TipoId")]
-     public Tipo Tipo { get; set; }
+    [ForeignKey("TipoId")]
+    public Tipo Tipo { get; set; }
 }

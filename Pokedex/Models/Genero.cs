@@ -1,8 +1,8 @@
-
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 namespace Pokedex.Models;
 
+[Table("Genero")]
 public class Genero
 {
     [Key]
