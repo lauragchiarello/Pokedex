@@ -13,10 +13,12 @@ namespace Pokedex.Controllers
     public class PokemonsController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IWebHostEnvironment _host;
 
-        public PokemonsController(AppDbContext context)
+        public PokemonsController(AppDbContext context, IWebHostEnvironment host)
         {
             _context = context;
+            _host = host;
         }
 
         // GET: Pokemons

@@ -12,7 +12,7 @@
 <p>
     <a class="btn btn-danger px-5" asp-action="Create"><i class="bi bi-plus-lg"></i> Adicionar</a>
 </p>
-<table class="table">
+<table class="table" id="table">
     <thead>
         <tr>
             <th>
@@ -52,11 +52,7 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Genero.Nome)
-                </td>
-
-
-
-               
+                </td>              
                 <td>
                     <a class ="text-decoration-none text-warning me-2" asp-action="Edit" asp-route-id="@item.Numero"><i class="bi bi-pencil-fill" title="Alterar"></i></a> 
                     <a class ="text-decoration-none me-2 " asp-action="Details" asp-route-id="@item.Numero"><i class="bi bi-eye-fill" title="Detalhes"></i></a> 
@@ -66,3 +62,15 @@
         }
     </tbody>
 </table>
+
+@section Styles {
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.4/css/dataTables.dataTables.min.css">
+}
+
+@section Scripts {
+    <script src="https://cdn.datatables.net/2.3.4/js/dataTables.min.js"></script>
+    <script>
+        let table= new DataTable('#table');
+    </script>
+}
+
